@@ -1,0 +1,21 @@
+{
+  "name": "kongress-2019",
+  "version": "0.1.0",
+  "scripts": {
+    "mdx": "mdx-deck --no-open kongress-2019.mdx",
+    "build": "mdx-deck build kongress-2019.mdx",
+    "start": "concurrently \"npm run mdx\" \"npm run serve\"",
+    "serve": "serve -n -l 8001",
+    "fmt": "prettier --write '**/*.{js,md}'"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^5.0.0",
+    "lodash.merge": "^4.6.2",
+    "mdx-deck": "^3.0.13",
+    "serve": "^11.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}
