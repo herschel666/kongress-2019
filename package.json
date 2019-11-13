@@ -6,7 +6,7 @@
     "build": "mdx-deck build kongress-2019.mdx",
     "start": "concurrently \"npm run mdx\" \"npm run serve\"",
     "serve": "serve -n -l 8001",
-    "fmt": "prettier --write '**/*.{js,md}'"
+    "fmt": "prettier --write '**/*.{js,md,yml}'"
   },
   "license": "MIT",
   "dependencies": {
