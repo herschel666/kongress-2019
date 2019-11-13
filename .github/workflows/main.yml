@@ -11,6 +11,13 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master
+    
+    - name: Set up Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    
+    - run: npm install
 
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v2
@@ -19,4 +26,4 @@ jobs:
         BASE_BRANCH: master
         BRANCH: gh-pages
         FOLDER: public
-        BUILD_SCRIPT: npm install && npm run build
+        BUILD_SCRIPT: npm run build
